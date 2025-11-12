@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(44, 124, 242, 0.2), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(242, 183, 5, 0.15), transparent 40%),
+    theme('colors.secondary');
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-white md:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-2 max-w-2xl text-base text-slate-300 md:text-lg;
+}
+
+.card-surface {
+  @apply rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border border-white/10 bg-white/10 px-3 py-1 text-sm font-medium text-slate-100;
+}
